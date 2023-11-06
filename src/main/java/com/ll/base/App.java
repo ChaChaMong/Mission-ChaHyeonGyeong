@@ -34,6 +34,9 @@ public class App {
                     case "삭제":
                         quotationController.actionRemove(rq);
                         break;
+                    case "수정":
+                        quotationController.actionModify(rq);
+                        break;
                     case "종료":
                         scanner.close();
                         return;

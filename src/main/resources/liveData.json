@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "content": "안녕하세요",
+    "authorName": "인사"
+  },
+  {
+    "id": 2,
+    "content": "잘가세요",
+    "authorName": "작별"
+  }
+]

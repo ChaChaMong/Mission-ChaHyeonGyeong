@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.google.code.gson:gson:2.8.9'
     // 롬복 추가
     implementation 'org.projectlombok:lombok:1.18.30'
     implementation 'org.projectlombok:lombok:1.18.28'

@@ -1,9 +1,11 @@
 package com.ll.domain;
 
 import com.ll.base.Rq;
+import standard.util.JsonFileIO;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class QuotationController {
@@ -11,10 +13,15 @@ public class QuotationController {
     private final List<Quotation> quotations;
     private int lastQuotationId;
 
+    private final JsonFileIO<Quotation> jsonFileIO;
+    String jsonLiveFilePath = "src/main/resources/liveData.json"; // 실시간 JSON 파일의 경로를 설정
+
     public QuotationController(Scanner scanner) {
         this.scanner = scanner;
-        quotations = new ArrayList<>();
-        lastQuotationId = 0;
+        jsonFileIO = new JsonFileIO<>();
+        List<Quotation> tempQuotations = jsonFileIO.readFile(jsonLiveFilePath, Quotation.class);
+        quotations = Objects.requireNonNullElseGet(tempQuotations, ArrayList::new);
+        lastQuotationId = getLastQuotationId();
     }
     public void actionWrite() {
         System.out.print("명언 : ");
@@ -28,7 +35,7 @@ public class QuotationController {
 
         Quotation quotation = new Quotation(id, content, authorName);
         quotations.add(quotation);
-
+        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
         System.out.printf("%d번 명언이 등록되었습니다.\n", quotation.getId());
     }
 
@@ -58,6 +65,7 @@ public class QuotationController {
         }
 
         quotations.remove(index);
+        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
 
         System.out.printf("%d번 명언이 삭제되었습니다.\n", id);
     }
@@ -87,6 +95,9 @@ public class QuotationController {
 
         quotations.get(index).setContent(content);
         quotations.get(index).setAuthorName(authorName);
+        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
+
+        System.out.printf("%d번 명언이 수정되었습니다.\n", id);
     }
 
     private int findQuotationIndexById(int id) {
@@ -97,5 +108,16 @@ public class QuotationController {
             }
         }
         return -1;
+    }
+
+    private int getLastQuotationId() {
+        int lastId = 0;
+        for (Quotation quotation : quotations) {
+            if (quotation.getId() > lastId) {
+                lastId = quotation.getId();
+            }
+        }
+
+        return lastId;
     }
 }

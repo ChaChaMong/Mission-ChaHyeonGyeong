@@ -21,12 +21,17 @@ public class App {
 
             String cmd = scanner.nextLine();
 
-            switch (cmd) {
+            Rq rq = new Rq(cmd);
+
+            switch (rq.getAction()) {
                 case "등록":
                     quotationController.actionWrite();
                     break;
                 case "목록":
                     quotationController.actionList();
+                    break;
+                case "삭제":
+                    quotationController.actionRemove(rq);
                     break;
                 case "종료":
                     scanner.close();

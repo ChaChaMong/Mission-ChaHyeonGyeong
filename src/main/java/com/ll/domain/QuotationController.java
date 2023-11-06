@@ -1,5 +1,7 @@
 package com.ll.domain;
 
+import com.ll.base.Rq;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -38,5 +40,25 @@ public class QuotationController {
             Quotation quotation = quotations.get(i);
             System.out.printf("%d / %s / %s\n", quotation.getId(), quotation.getAuthorName(), quotation.getContent());
         }
+    }
+
+    public void actionRemove(Rq rq) {
+        int id = rq.getParamAsInt("id", 0);
+
+        int index = findQuotationIndexById(id);
+
+        quotations.remove(index);
+
+        System.out.printf("%d번 명언이 삭제되었습니다.\n", id);
+    }
+
+    private int findQuotationIndexById(int id) {
+        for (int i = 0; i < quotations.size(); i++) {
+            Quotation quotation = quotations.get(i);
+            if (quotation.getId() == id) {
+                return i;
+            }
+        }
+        return -1;
     }
 }

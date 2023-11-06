@@ -21,22 +21,25 @@ public class App {
 
             String cmd = scanner.nextLine();
 
-            Rq rq = new Rq(cmd);
+            try {
+                Rq rq = new Rq(cmd);
 
-            switch (rq.getAction()) {
-                case "등록":
-                    quotationController.actionWrite();
-                    break;
-                case "목록":
-                    quotationController.actionList();
-                    break;
-                case "삭제":
-                    quotationController.actionRemove(rq);
-                    break;
-                case "종료":
-                    scanner.close();
-                    return;
-
+                switch (rq.getAction()) {
+                    case "등록":
+                        quotationController.actionWrite();
+                        break;
+                    case "목록":
+                        quotationController.actionList();
+                        break;
+                    case "삭제":
+                        quotationController.actionRemove(rq);
+                        break;
+                    case "종료":
+                        scanner.close();
+                        return;
+                }
+            } catch (Exception e) {
+                System.out.println("올바른 명령 형식으로 입력해 주세요.");
             }
         }
     }

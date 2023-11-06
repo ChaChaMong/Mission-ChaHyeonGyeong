@@ -45,7 +45,17 @@ public class QuotationController {
     public void actionRemove(Rq rq) {
         int id = rq.getParamAsInt("id", 0);
 
+        if (id == 0) {
+            System.out.println("id를 정확히 입력해주세요.");
+            return;
+        }
+
         int index = findQuotationIndexById(id);
+
+        if (index == -1) {
+            System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
+            return;
+        }
 
         quotations.remove(index);
 

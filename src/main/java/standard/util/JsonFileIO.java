@@ -33,6 +33,8 @@ public class JsonFileIO<T> {
     public void writeFile(List<T> dataList, String filePath) {
         String jsonData = gson.toJson(dataList);
 
+        createFile(filePath);
+
         try (FileWriter writer = new FileWriter(filePath)) {
             // JSON 문자열을 파일에 쓰기
             writer.write(jsonData);

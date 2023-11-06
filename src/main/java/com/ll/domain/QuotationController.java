@@ -15,6 +15,7 @@ public class QuotationController {
 
     private final JsonFileIO<Quotation> jsonFileIO;
     String jsonLiveFilePath = "src/main/resources/liveData.json"; // 실시간 JSON 파일의 경로를 설정
+    String jsonBuildFilePath = "src/main/resources/data.json"; // 빌드 JSON 파일의 경로를 설정
 
     public QuotationController(Scanner scanner) {
         this.scanner = scanner;
@@ -98,6 +99,12 @@ public class QuotationController {
         jsonFileIO.writeFile(quotations, jsonLiveFilePath);
 
         System.out.printf("%d번 명언이 수정되었습니다.\n", id);
+    }
+
+    public void actionBuild() {
+        jsonFileIO.writeFile(quotations, jsonBuildFilePath);
+
+        System.out.println("data.json 파일의 내용이 갱신되었습니다.");
     }
 
     private int findQuotationIndexById(int id) {

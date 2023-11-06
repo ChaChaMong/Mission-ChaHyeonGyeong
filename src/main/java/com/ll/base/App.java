@@ -25,6 +25,9 @@ public class App {
                 case "등록":
                     quotationController.actionWrite();
                     break;
+                case "목록":
+                    quotationController.actionList();
+                    break;
                 case "종료":
                     scanner.close();
                     return;

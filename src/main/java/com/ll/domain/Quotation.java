@@ -11,4 +11,7 @@ public class Quotation {
     @Getter
     @Setter
     private String content;
+    @Getter
+    @Setter
+    private String authorName;
 }

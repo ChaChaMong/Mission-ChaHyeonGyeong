@@ -16,7 +16,10 @@ public class QuotationController {
         System.out.print("명언 : ");
         String content = scanner.nextLine();
 
-        Quotation quotation = new Quotation(quotations.size() + 1, content);
+        System.out.print("명언 : ");
+        String authorName = scanner.nextLine();
+
+        Quotation quotation = new Quotation(quotations.size() + 1, content, authorName);
         quotations.add(quotation);
 
         System.out.printf("%d번 명언이 등록되었습니다.\n", quotation.getId());

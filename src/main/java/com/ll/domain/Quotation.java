@@ -1,17 +1,25 @@
 package com.ll.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import com.google.gson.annotations.Expose;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
 public class Quotation {
-    @Getter
-    private int id;
-    @Getter
-    @Setter
+    @Expose
+    private long id;
+    private LocalDateTime createdDate;
+    private LocalDateTime modifiedDate;
+    @Expose
     private String content;
-    @Getter
-    @Setter
+    @Expose
     private String authorName;
+
+    public Quotation(String content, String authorName) {
+        this.content = content;
+        this.authorName = authorName;
+    }
 }

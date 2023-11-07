@@ -47,8 +47,10 @@ public class App {
                         System.out.println("등록된 명령어가 아닙니다.");
                         
                 }
-            } catch (Exception e) {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("올바른 명령 형식으로 입력해 주세요.");
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

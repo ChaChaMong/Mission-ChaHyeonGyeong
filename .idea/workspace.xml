@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72c17f67-b863-409d-acbc-94c533f00136" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211/storage_v2/_src_/schema/simpledb__test.Ivaxvg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211/storage_v2/_src_/schema/simpledb__test.Ivaxvg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/base/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/base/Rq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/standard/util/Ut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/standard/util/Ut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleDbTest.selectArticles" />
+        <item itemvalue="JUnit.SimpleDbTest.selectArticle" />
         <item itemvalue="JUnit.SimpleDbTest.selectOrderByField" />
         <item itemvalue="JUnit.SimpleDbTest.selectIn" />
         <item itemvalue="JUnit.SimpleDbTest.selectBind" />
-        <item itemvalue="JUnit.SimpleDbTest.selectArticles" />
-        <item itemvalue="JUnit.SimpleDbTest.selectArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699230053208</updated>
       <workItem from="1699230054301" duration="30251000" />
-      <workItem from="1699315586980" duration="14063000" />
+      <workItem from="1699315586980" duration="27059000" />
     </task>
     <servers />
   </component>
@@ -195,18 +204,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ll/base/App.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java</url>
-          <line>18</line>
+          <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -223,6 +222,46 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
           <line>87</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/e1167849f172a0b75d6ffe4e4b2f34b9259795bb/gson-2.8.9-sources.jar!/com/google/gson/Gson.java</url>
+          <line>744</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

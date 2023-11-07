@@ -1,28 +1,25 @@
 package com.ll.domain;
 
 import com.ll.base.Rq;
+import com.ll.simpleDb.SimpleDb;
 import standard.util.JsonFileIO;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class QuotationController {
     private final Scanner scanner;
-    private final List<Quotation> quotations;
-    private int lastQuotationId;
+    private final SimpleDb simpleDb;
+    private final QuotationDao quotationDao;
 
     private final JsonFileIO<Quotation> jsonFileIO;
-    String jsonLiveFilePath = "src/main/resources/liveData.json"; // 실시간 JSON 파일의 경로를 설정
     String jsonBuildFilePath = "src/main/resources/data.json"; // 빌드 JSON 파일의 경로를 설정
 
     public QuotationController(Scanner scanner) {
         this.scanner = scanner;
+        quotationDao = new QuotationDao();
+        simpleDb = new SimpleDb("localhost", "root", "lldj123414", "simpleDb");
         jsonFileIO = new JsonFileIO<>();
-        List<Quotation> tempQuotations = jsonFileIO.readFile(jsonLiveFilePath, Quotation.class);
-        quotations = Objects.requireNonNullElseGet(tempQuotations, ArrayList::new);
-        lastQuotationId = getLastQuotationId();
     }
     public void actionWrite() {
         System.out.print("명언 : ");
@@ -31,19 +28,18 @@ public class QuotationController {
         System.out.print("작가 : ");
         String authorName = scanner.nextLine();
 
-        lastQuotationId++;
-        int id = lastQuotationId;
+        Quotation quotation = new Quotation(content, authorName);
+        long id = quotationDao.insertQuotation(simpleDb, quotation);
 
-        Quotation quotation = new Quotation(id, content, authorName);
-        quotations.add(quotation);
-        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
-        System.out.printf("%d번 명언이 등록되었습니다.\n", quotation.getId());
+        System.out.printf("%d번 명언이 등록되었습니다.\n", id);
     }
 
     public void actionList() {
         System.out.println("번호 / 작가 / 명언");
         System.out.println("----------------------");
 
+        List<Quotation> quotations;
+        quotations = quotationDao.selectAllQuotations(simpleDb);
         for (int i = quotations.size() - 1; i >= 0; i--) {
             Quotation quotation = quotations.get(i);
             System.out.printf("%d / %s / %s\n", quotation.getId(), quotation.getAuthorName(), quotation.getContent());
@@ -51,24 +47,20 @@ public class QuotationController {
     }
 
     public void actionRemove(Rq rq) {
-        int id = rq.getParamAsInt("id", 0);
+        long id = rq.getParamAsLong("id", 0);
 
         if (id == 0) {
             System.out.println("id를 정확히 입력해주세요.");
             return;
         }
 
-        int index = findQuotationIndexById(id);
+        long index = quotationDao.deleteQuotationById(simpleDb, id);
 
-        if (index == -1) {
+        if (index == 0) {
             System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
-            return;
+        } else {
+            System.out.printf("%d번 명언이 삭제되었습니다.\n", id);
         }
-
-        quotations.remove(index);
-        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
-
-        System.out.printf("%d번 명언이 삭제되었습니다.\n", id);
     }
 
     public void actionModify(Rq rq) {
@@ -79,52 +71,33 @@ public class QuotationController {
             return;
         }
 
-        int index = findQuotationIndexById(id);
+        Quotation quotation = quotationDao.selectQuotationsById(simpleDb, id);
 
-        if (index == -1) {
+        if (quotation == null) {
             System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
             return;
         }
 
-        System.out.printf("명언(기존) : %s\n", quotations.get(index).getContent());
+        System.out.printf("명언(기존) : %s\n", quotation.getContent());
         System.out.print("명언 : ");
         String content = scanner.nextLine();
 
-        System.out.printf("작가(기존) : %s\n", quotations.get(index).getAuthorName());
+        System.out.printf("작가(기존) : %s\n", quotation.getAuthorName());
         System.out.print("작가 : ");
         String authorName = scanner.nextLine();
 
-        quotations.get(index).setContent(content);
-        quotations.get(index).setAuthorName(authorName);
-        jsonFileIO.writeFile(quotations, jsonLiveFilePath);
+        quotation.setContent(content);
+        quotation.setAuthorName(authorName);
+
+        quotationDao.updateQuotationById(simpleDb, quotation);
 
         System.out.printf("%d번 명언이 수정되었습니다.\n", id);
     }
 
     public void actionBuild() {
+        List<Quotation> quotations = quotationDao.selectAllQuotations(simpleDb);
         jsonFileIO.writeFile(quotations, jsonBuildFilePath);
 
         System.out.println("data.json 파일의 내용이 갱신되었습니다.");
-    }
-
-    private int findQuotationIndexById(int id) {
-        for (int i = 0; i < quotations.size(); i++) {
-            Quotation quotation = quotations.get(i);
-            if (quotation.getId() == id) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    private int getLastQuotationId() {
-        int lastId = 0;
-        for (Quotation quotation : quotations) {
-            if (quotation.getId() > lastId) {
-                lastId = quotation.getId();
-            }
-        }
-
-        return lastId;
     }
 }

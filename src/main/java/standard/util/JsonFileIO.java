@@ -12,8 +12,11 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 public class JsonFileIO<T> {
-// Gson 객체 생성
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    // Gson 객체 생성
+    Gson gson = new GsonBuilder()
+            .excludeFieldsWithoutExposeAnnotation()
+            .setPrettyPrinting()
+            .create();
 
     public List<T> readFile(String filePath, Class<T> type) {
         List<T> dataList = null;

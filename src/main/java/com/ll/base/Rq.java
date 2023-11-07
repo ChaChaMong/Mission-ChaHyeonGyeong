@@ -39,7 +39,11 @@ public class Rq {
         }
     }
 
-    public int getParamAsInt (String paramName, int defaultValue) {
+    public int getParamAsInt(String paramName, int defaultValue) {
         return Ut.str.parseInt(paramsMap.get(paramName), defaultValue);
+    }
+
+    public long getParamAsLong(String paramName, long defaultValue) {
+        return Ut.str.parseLong(paramsMap.get(paramName), defaultValue);
     }
 }

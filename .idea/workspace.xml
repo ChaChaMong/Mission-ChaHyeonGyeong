@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72c17f67-b863-409d-acbc-94c533f00136" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/de25e9f0fc9ae5e9273e59eecde038096197809/mysql-connector-java-8.0.28-sources.jar!/com/mysql/cj/jdbc/StatementImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2XmMxxg08dw1Cgk504DncnhvGCu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -49,22 +58,122 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "1Week",
+    "last_opened_file_path": "D:/DemoProject/Mission_ChaHyeonGyeong",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ll.simpleDb" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="standard.util" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SimpleDbTest.selectArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectArticles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectBind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectBind" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectOrderByField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectOrderByField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SimpleDbTest.selectOrderByField" />
+        <item itemvalue="JUnit.SimpleDbTest.selectIn" />
+        <item itemvalue="JUnit.SimpleDbTest.selectBind" />
+        <item itemvalue="JUnit.SimpleDbTest.selectArticles" />
+        <item itemvalue="JUnit.SimpleDbTest.selectArticle" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +183,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699230053208</updated>
-      <workItem from="1699230054301" duration="18041000" />
+      <workItem from="1699230054301" duration="30251000" />
+      <workItem from="1699315586980" duration="14063000" />
     </task>
     <servers />
   </component>
@@ -99,7 +209,27 @@
           <line>18</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mission_ChaHyeonGyeong$SimpleDbTest.ic" NAME="SimpleDbTest Coverage Results" MODIFIED="1699337584446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ll.simpleDb.*</FILTER>
+    </SUITE>
   </component>
 </project>

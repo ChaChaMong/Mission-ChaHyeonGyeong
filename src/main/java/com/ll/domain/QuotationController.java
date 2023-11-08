@@ -2,6 +2,7 @@ package com.ll.domain;
 
 import com.ll.base.Rq;
 import com.ll.simpleDb.SimpleDb;
+import standard.util.AppConfig;
 import standard.util.JsonFileIO;
 
 import java.util.List;
@@ -15,10 +16,15 @@ public class QuotationController {
     private final JsonFileIO<Quotation> jsonFileIO;
     String jsonBuildFilePath = "src/main/resources/data.json"; // 빌드 JSON 파일의 경로를 설정
 
+    String host = AppConfig.getProperty("db.host");
+    String id = AppConfig.getProperty("db.id");
+    String password = AppConfig.getProperty("db.password");
+    String dbName = AppConfig.getProperty("db.dbName");
+
     public QuotationController(Scanner scanner) {
         this.scanner = scanner;
         quotationDao = new QuotationDao();
-        simpleDb = new SimpleDb("localhost", "root", "lldj123414", "simpleDb");
+        simpleDb = new SimpleDb(host, id, password, dbName);
         jsonFileIO = new JsonFileIO<>();
     }
     public void actionWrite() {

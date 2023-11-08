@@ -7,16 +7,8 @@
     <list default="true" id="72c17f67-b863-409d-acbc-94c533f00136" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211/storage_v2/_src_/schema/simpledb__test.Ivaxvg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211/storage_v2/_src_/schema/simpledb__test.Ivaxvg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/base/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/base/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/base/Rq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/Quotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/standard/util/Ut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/standard/util/Ut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +39,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/de25e9f0fc9ae5e9273e59eecde038096197809/mysql-connector-java-8.0.28-sources.jar!/com/mysql/cj/jdbc/StatementImpl.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XmMxxg08dw1Cgk504DncnhvGCu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -61,30 +56,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "1Week",
-    "last_opened_file_path": "D:/DemoProject/Mission_ChaHyeonGyeong",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1Week&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DemoProject/Mission_ChaHyeonGyeong&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ll.simpleDb" />
@@ -193,7 +188,8 @@
       <option name="presentableId" value="Default" />
       <updated>1699230053208</updated>
       <workItem from="1699230054301" duration="30251000" />
-      <workItem from="1699315586980" duration="27059000" />
+      <workItem from="1699315586980" duration="27784000" />
+      <workItem from="1699401309500" duration="822000" />
     </task>
     <servers />
   </component>
@@ -225,7 +221,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
-          <line>66</line>
+          <line>72</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -240,7 +236,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
-          <line>49</line>
+          <line>55</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -260,7 +256,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
-          <line>98</line>
+          <line>104</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>

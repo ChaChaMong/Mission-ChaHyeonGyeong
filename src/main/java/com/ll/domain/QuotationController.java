@@ -14,17 +14,17 @@ public class QuotationController {
     private final QuotationDao quotationDao;
 
     private final JsonFileIO<Quotation> jsonFileIO;
-    String jsonBuildFilePath = "src/main/resources/data.json"; // 빌드 JSON 파일의 경로를 설정
+    private static final String JSON_BUILD_FILE_PATH = "src/main/resources/data.json"; // 빌드 JSON 파일의 경로를 설정
 
-    String host = AppConfig.getProperty("db.host");
-    String id = AppConfig.getProperty("db.id");
-    String password = AppConfig.getProperty("db.password");
-    String dbName = AppConfig.getProperty("db.dbName");
+    private static final String HOST = AppConfig.getProperty("db.host");
+    private static final String ID = AppConfig.getProperty("db.id");
+    private static final String PW = AppConfig.getProperty("db.password");
+    private static final String DBNAME = AppConfig.getProperty("db.dbName");
 
     public QuotationController(Scanner scanner) {
         this.scanner = scanner;
         quotationDao = new QuotationDao();
-        simpleDb = new SimpleDb(host, id, password, dbName);
+        simpleDb = new SimpleDb(HOST, ID, PW, DBNAME);
         jsonFileIO = new JsonFileIO<>();
     }
     public void actionWrite() {
@@ -102,7 +102,7 @@ public class QuotationController {
 
     public void actionBuild() {
         List<Quotation> quotations = quotationDao.selectAllQuotations(simpleDb);
-        jsonFileIO.writeFile(quotations, jsonBuildFilePath);
+        jsonFileIO.writeFile(quotations, JSON_BUILD_FILE_PATH);
 
         System.out.println("data.json 파일의 내용이 갱신되었습니다.");
     }

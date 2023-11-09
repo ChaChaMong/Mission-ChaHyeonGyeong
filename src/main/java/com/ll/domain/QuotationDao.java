@@ -2,11 +2,18 @@ package com.ll.domain;
 
 import com.ll.simpleDb.SimpleDb;
 import com.ll.simpleDb.Sql;
+import standard.util.AppConfig;
 
 import java.util.List;
 
 public class QuotationDao {
-    public List<Quotation> selectAllQuotations(SimpleDb simpleDb) {
+    private static final String HOST = AppConfig.getProperty("db.host");
+    private static final String ID = AppConfig.getProperty("db.id");
+    private static final String PW = AppConfig.getProperty("db.password");
+    private static final String DBNAME = AppConfig.getProperty("db.dbName");
+    SimpleDb simpleDb = new SimpleDb(HOST, ID, PW, DBNAME);
+
+    public List<Quotation> selectAllQuotations() {
         Sql sql = simpleDb.genSql();
         /*
         == rawSql ==
@@ -19,7 +26,7 @@ public class QuotationDao {
         return sql.selectRows(Quotation.class);
     }
 
-    public long selectCountQuotationsById(SimpleDb simpleDb, long id) {
+    public long selectCountQuotationsById(long id) {
         Sql sql = simpleDb.genSql();
         /*
         == rawSql ==
@@ -32,7 +39,7 @@ public class QuotationDao {
         return sql.selectLong();
     }
 
-    public Quotation selectQuotationsById(SimpleDb simpleDb, long id) {
+    public Quotation selectQuotationsById(long id) {
         Sql sql = simpleDb.genSql();
         /*
         == rawSql ==
@@ -45,7 +52,7 @@ public class QuotationDao {
         return sql.selectRow(Quotation.class);
     }
 
-    public long insertQuotation(SimpleDb simpleDb, Quotation quotation) {
+    public long insertQuotation(Quotation quotation) {
         Sql sql = simpleDb.genSql();
         /*
         == rawSql ==
@@ -64,7 +71,7 @@ public class QuotationDao {
         return sql.insert(); // AUTO_INCREMENT 에 의해서 생성된 주키 리턴
     }
 
-    public long deleteQuotationById(SimpleDb simpleDb, long id) {
+    public long deleteQuotationById(long id) {
         Sql sql = simpleDb.genSql();
 
         /*
@@ -80,7 +87,7 @@ public class QuotationDao {
         return sql.delete();
     }
 
-    public long updateQuotationById(SimpleDb simpleDb, Quotation quotation) {
+    public long updateQuotationById(Quotation quotation) {
         Sql sql = simpleDb.genSql();
 
         /*

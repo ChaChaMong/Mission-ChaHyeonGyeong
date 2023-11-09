@@ -5,7 +5,7 @@ import com.ll.domain.QuotationController;
 import java.util.Scanner;
 
 public class App {
-    private Scanner scanner;
+    private final Scanner scanner;
 
     public App() {
         scanner = new Scanner(System.in);

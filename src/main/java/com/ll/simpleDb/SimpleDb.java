@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SimpleDb {
-    private String host;
-    private String user;
-    private String password;
-    private String dbName;
+    private final String host;
+    private final String user;
+    private final String password;
+    private final String dbName;
     private boolean devMode;
 
     public SimpleDb(String host, String user, String password, String dbName) {

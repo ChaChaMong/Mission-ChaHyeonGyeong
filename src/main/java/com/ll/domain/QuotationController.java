@@ -70,7 +70,7 @@ public class QuotationController {
     }
 
     public void actionModify(Rq rq) {
-        int id = rq.getParamAsInt("id", 0);
+        long id = rq.getParamAsLong("id", 0);
 
         if (id == 0) {
             System.out.println("id를 정확히 입력해주세요.");

@@ -4,20 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="72c17f67-b863-409d-acbc-94c533f00136" name="Changes" comment="" />
+=======
+    <list default="true" id="72c17f67-b863-409d-acbc-94c533f00136" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69ce746c-8d50-4072-8c80-402ce12c8211.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java" afterDir="false" />
+    </list>
+>>>>>>> 2bae5f02e12d23d417f98279da22ae41e824a7a4
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/de25e9f0fc9ae5e9273e59eecde038096197809/mysql-connector-java-8.0.28-sources.jar!/com/mysql/cj/jdbc/StatementImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XmMxxg08dw1Cgk504DncnhvGCu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -31,10 +65,131 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+    &quot;git-widget-placeholder&quot;: &quot;1Week&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DemoProject/Mission_ChaHyeonGyeong&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ll.simpleDb" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="standard.util" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SimpleDbTest.selectArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectArticles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectBind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectBind" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDbTest.selectOrderByField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mission_ChaHyeonGyeong.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.simpleDb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.simpleDb" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.simpleDb.SimpleDbTest" />
+      <option name="METHOD_NAME" value="selectOrderByField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SimpleDbTest.selectArticles" />
+        <item itemvalue="JUnit.SimpleDbTest.selectArticle" />
+        <item itemvalue="JUnit.SimpleDbTest.selectOrderByField" />
+        <item itemvalue="JUnit.SimpleDbTest.selectIn" />
+        <item itemvalue="JUnit.SimpleDbTest.selectBind" />
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> 2bae5f02e12d23d417f98279da22ae41e824a7a4
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,10 +198,84 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699230053208</updated>
-      <workItem from="1699230054301" duration="31000" />
+      <workItem from="1699230054301" duration="30251000" />
+      <workItem from="1699315586980" duration="27784000" />
+      <workItem from="1699401309500" duration="822000" />
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ll/simpleDb/SimpleDbTest.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/simpleDb/Sql.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/standard/util/JsonFileIO.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/e1167849f172a0b75d6ffe4e4b2f34b9259795bb/gson-2.8.9-sources.jar!/com/google/gson/Gson.java</url>
+          <line>744</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ll/domain/QuotationController.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+>>>>>>> 2bae5f02e12d23d417f98279da22ae41e824a7a4
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mission_ChaHyeonGyeong$SimpleDbTest.ic" NAME="SimpleDbTest Coverage Results" MODIFIED="1699337584446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ll.simpleDb.*</FILTER>

@@ -7,16 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Rq {
-    private String cmd;
     @Getter
     private String action;
-    private String queryString;
-    private Map<String, String> paramsMap;
+    private final Map<String, String> paramsMap;
 
     public Rq(String cmd) {
         paramsMap = new HashMap<>();
-
-        this.cmd = cmd;
 
         String[] cmdBits = cmd.split("\\?", 2);
         action = cmdBits[0].trim();
@@ -25,7 +21,7 @@ public class Rq {
             return;
         }
 
-        queryString = cmdBits[1].trim();
+        String queryString = cmdBits[1].trim();
 
         String[] queryStringBits = queryString.split("&");
 
